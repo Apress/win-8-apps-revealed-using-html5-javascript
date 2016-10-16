@@ -1,0 +1,68 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>MetroGrocer</title>
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-dark.css" rel="stylesheet">
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+    <!-- MetroGrocer references -->
+    <link href="/css/list.css" rel="stylesheet">
+    <link href="/css/flyout.css" rel="stylesheet">
+    <link href="/css/default.css" rel="stylesheet">
+    <script src="/js/viewmodel.js"></script>
+    <script src="/js/ui.js"></script>
+    <script src="/js/pages.js"></script>
+    <script src="/js/default.js"></script>
+</head>
+
+
+<body>
+    <div id="contentGrid">
+        <div id="leftContainer" class="gridLeft">
+            <h1 class="win-type-xx-large">Grocery List</h1>
+
+            <table id="listTable" class="type-table-header">
+                <thead>
+                    <tr>
+                        <th>Quantity</th>
+                        <th class="itemName">Item</th>
+                        <th class="store">Store</th>
+                    </tr>
+                </thead>
+                <tbody id="itemBody"></tbody>
+            </table>
+        </div>
+
+        <div id="topRightContainer" class="gridRight">
+            <h1 class="win-type-xx-large">Item Detail</h1>
+            <div id="itemDetailTarget"></div>
+        </div>
+
+        <div id="bottomRightContainer" class="gridRight">
+            <h1 class="win-type-xx-large">Store Detail</h1>
+            <div id="storeDetailTarget"></div>
+        </div>
+    </div>
+
+    <!-- import HTML fragments -->
+    <div data-win-control="WinJS.UI.HtmlControl" 
+        data-win-options="{uri: '/html/appbar.html'}"></div>
+    <div data-win-control="WinJS.UI.HtmlControl" 
+        data-win-options="{uri: '/html/addItemFlyout.html'}"></div>
+    <!-- end of HTML fragments -->
+
+    <!-- template for grocery list items -->
+    <table>
+        <tbody id="itemTemplate" data-win-control="WinJS.Binding.Template">
+            <tr class="groceryItem">
+                <td data-win-bind="innerText: quantity"></td>
+                <td data-win-bind="innerText: item"></td>
+                <td data-win-bind="innerText: store"></td>
+            </tr>
+        </tbody>
+    </table>
+    <!-- end of template for grocery list items -->
+</body>
+</html>

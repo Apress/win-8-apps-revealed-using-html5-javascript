@@ -1,0 +1,33 @@
+﻿#itemEditor {
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#itemEditor select {
+    font-size: 16pt;
+}
+
+#itemEditor input {   
+    margin-bottom: 5px;
+    display: block;
+    font-size: 16pt;
+}
+
+#itemEditor select, #itemEditor textarea {
+    margin-top: 0px;
+    display: block;
+}
+
+#buttons {
+    margin-top: 20px;
+}
+
+iframe {
+    width: calc(100% - 10px);
+    margin-top: 20px;
+    height:  100%;    
+}
+
+#storeDetailTarget, #storeSelectionContainer {
+    height:  100%;
+}

@@ -1,0 +1,4 @@
+﻿#addItemFlyout { background-color: #85C54C; font-weight: bold;}
+div.flyout input { margin-bottom: 5px; width:  calc(100% - 5px); }
+div.flyout select { margin-top: 0px; width: 100% }
+div.rightAlign { margin-top: 10px; float: right;}

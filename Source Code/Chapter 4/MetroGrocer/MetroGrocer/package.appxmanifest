@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="7450b418-ca55-4e0e-af84-cd8fdb59d21f" Version="1.0.0.0" Publisher="CN=adam" />
+  <Properties>
+    <DisplayName>MetroGrocer</DisplayName>
+    <PublisherDisplayName>adam</PublisherDisplayName>
+    <Logo>images\storelogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" StartPage="default.html">
+      <VisualElements DisplayName="MetroGrocer" Logo="images\tile150.png" SmallLogo="images\tile30.png" Description="MetroGrocer" ForegroundText="light" BackgroundColor="#4A8C43">
+        <DefaultTile ShowName="allLogos" WideLogo="images\tile310.png" ShortName="Grocer" />
+        <SplashScreen Image="images\tile620.png" BackgroundColor="#4A8C43" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
